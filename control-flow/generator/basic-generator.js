@@ -14,8 +14,16 @@ function* getFruits(){
 
 // using a generator 
 
+// getting the Iterator 
 const fruitsIterator = getFruits();
 
+//approach one 
 while((fruit = fruitsIterator.next()).value){
     console.log(fruit)
 }
+
+// approach 2 
+// for(fruit of fruitsIterator){
+//     console.log(fruit);
+// }
+
